@@ -1,0 +1,15 @@
+{
+"manifest_version": 2,
+  "name": "New Page Override",
+  "version": "0.1",
+  "description": "Build an Extension!",
+
+    "chrome_url_overrides" : {
+	    "newtab" : "home.html"
+    },
+
+    "content_security_policy": "script-src 'self' https://ajax.googleapis.com; object-src 'self'",
+
+    "permissions": ["https://calm-dusk-59271.herokuapp.com/*"]
+
+}

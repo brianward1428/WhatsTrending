@@ -1,0 +1,15 @@
+
+body, a {
+	font-family: "Source Code Pro", monospace;
+	font-size: 10pt;
+	color: #cccccc;
+	background-color: #0f0f23;
+}
+.clickable-row{
+cursor:pointer;
+}
+
+th, td{
+	color: #cccccc;
+
+}

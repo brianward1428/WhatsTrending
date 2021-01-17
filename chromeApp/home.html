@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<link rel="stylesheet" href="home.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+	<title> my Home Page</title>
+</head>
+<body>
+	<div class="container-fluid mx-0">
+		<div class="row">
+			<div class="col-sm-6">
+				<div class="container myTable">
+					<h3> Product Hunt </h3>
+					<table class='table table-bordered table-condensed table-striped table-hover'>
+						<thead>
+							<tr>
+								<th>  name  </th>
+								<th> description </th>
+								<th> upvotes </th>
+							</tr>
+						</thead>
+						<tbody class = "ph-body">
+							<tr class="ph-template clickable-row d-none" data-href=''>
+								<th class="ph-template-name">  name </th>
+								<th class="ph-template-description"> description </th>
+								<th class="ph-template-upvotes"> upvotes </th>
+							</tr>
+						</tbody>
+
+					</table>
+				</div>
+			</div>
+			<div class="col-sm-6">
+				<div class="row">
+					<div class="container myTable">
+						<h3> Google Trends </h3>
+						<table class='table table-bordered table-condensed table-striped table-hover'>
+							<thead>
+								<tr>
+									<th> title </th>
+									<th> Search Count </th>
+								</tr>
+							</thead>
+							<tbody class = "gs-body">
+								<tr class="gs-template clickable-row d-none" data-href=''>
+									<th class="gs-template-title"> title </th>
+									<th class="gs-template-searchcount"> search Count </th>
+								</tr>
+							</tbody>
+
+						</table>
+					</div>
+				</div>
+			</div>
+		</div>
+			<div class="row">
+				<div class="col-sm-6">
+					<div class="container myTable">
+						<h3> YouTube </h3>
+						<table class='table table-bordered table-condensed table-striped table-hover'>
+							<thead>
+								<tr>
+									<th> title </th>
+									<th> description </th>
+								</tr>
+							</thead>
+							<tbody class = "yt-body">
+								<tr class="yt-template clickable-row d-none" data-href=''>
+									<th class="yt-template-title"> title </th>
+									<th class="yt-template-info"> info </th>
+								</tr>
+							</tbody>
+
+						</table>
+					</div>
+				</div>
+
+
+				<div class="col-sm-6">
+					<div class="container myTable">
+						<h3> Reddit Activity  </h3>
+						<table class='table table-bordered table-condensed table-striped table-hover'>
+							<thead>
+								<tr>
+									<th> title </th>
+									<th> Subscribers </th>
+								</tr>
+							</thead>
+							<tbody class = "ra-body">
+								<tr class="ra-template clickable-row d-none" data-href=''>
+									<th class="ra-template-title"> title </th>
+									<th class="ra-template-subscribers"> subs </th>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+
+			</div>
+			<div class="row">
+				<div class="col-sm-6">
+					<div class="container myTable">
+						<h3> Reddit Growth  </h3>
+						<table class='table table-bordered table-condensed table-striped table-hover'>
+							<thead>
+								<tr>
+									<th> title </th>
+									<th> growth </th>
+								</tr>
+							</thead>
+							<tbody class = "rg-body">
+								<tr class="rg-template clickable-row d-none" data-href=''>
+									<th class="rg-template-title"> title </th>
+									<th class="rg-template-growth"> growth </th>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+				<div class="col-sm-6">
+					<div class="container myTable">
+						<h3> Reddit Subscriptions  </h3>
+						<table class='table table-bordered table-condensed table-striped table-hover'>
+							<thead>
+								<tr>
+									<th> title </th>
+									<th> subscribers </th>
+								</tr>
+							</thead>
+							<tbody class = "sub-body">
+								<tr class="sub-template clickable-row d-none" data-href=''>
+									<th class="sub-template-title"> title </th>
+									<th class="sub-template-subs"> subscribers </th>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script src="script.js" type="text/jscript"></script>
+		<script src="linkScript.js" type="text/jscript"></script>
+
+	</body>
+	</html>
