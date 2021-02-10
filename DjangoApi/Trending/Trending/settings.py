@@ -22,7 +22,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/3.1/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'ms2b-pv$m4k37fbt5+1hekxs61*n0o^vvjdbnqnp45@7_mr!g@'
+SECRET_KEY = os.environ['SECRET_KEY']
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
@@ -85,19 +85,10 @@ DATABASES = {
 		'HOST': 'ec2-3-211-167-220.compute-1.amazonaws.com',
 		'PORT': 5432,
 		'USER': 'nhhveiyemjiebh',
-		'PASSWORD': 'fb0fe6bea7ebace1bdba545c06f36a251f32e58ff184260987a99527c81ad946'
+		'PASSWORD': os.environ['DB_KEY']
     }
 }
 
-# DATABASES = {
-#     'default': {
-#         'ENGINE': 'django.db.backends.sqlite3',
-#         'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
-#     }
-# }
-
-# Password validation
-# https://docs.djangoproject.com/en/3.1/ref/settings/#auth-password-validators
 
 AUTH_PASSWORD_VALIDATORS = [
     {
